@@ -1,0 +1,120 @@
+.header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  padding-bottom: 130px;
+  padding-top: 40px;
+}
+.header__nav-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 490px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  list-style: none;
+  text-transform: uppercase;
+  padding: 0;
+}
+.header__nav-menu a {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: $second-font;
+  &:hover,
+  &:focus {
+    color: #fce38a;
+  }
+}
+
+.header__nav-menu__list-item {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  letter-spacing: 0.35px;
+  position: relative;
+}
+.header__nav-menu__list-item:hover::after {
+  opacity: 1;
+  visibility: visible;
+  width: 100%;
+}
+.header__nav-menu__list-item::after {
+  display: block;
+  width: 0%;
+  content: '';
+  height: 2px;
+  bottom: -10px;
+  background-color: #fce38a;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.header {
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 230px;
+  background-image: url(../images/header.jpg);
+}
+.header__nav-menu__list-icon {
+  fill: #ffffff;
+  &:hover {
+    fill: #fce38a;
+  }
+}
+
+.menu__list__icon-glas {
+  width: 18px;
+  height: 18px;
+}
+.menu__list__icon-card {
+  width: 18px;
+  height: 15px;
+}
+.navigation__wrapper {
+  width: 820px;
+  margin: 0 auto;
+}
+.navigation__creative {
+  font-family: 'Kaushan Script', cursive;
+  font-weight: 400;
+  text-align: center;
+  font-size: 72px;
+  line-height: 86px;
+  color: #ffffff;
+}
+.navigation__tittle {
+  font-size: 150px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+}
+.navigation__button {
+  cursor: pointer;
+  border: solid 3px #fff;
+  padding: 12px 30px;
+  width: 164px;
+  height: 44px;
+  font-size: 14px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: transparent;
+  color: $main-font-color;
+  text-transform: uppercase;
+  font-family: $second-font;
+  font-weight: 400;
+  color: #fff;
+}
